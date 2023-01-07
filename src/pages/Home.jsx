@@ -1,8 +1,9 @@
 import React from 'react'
+import { MoviesHomeView } from '../modules/home'
 
 const Home = () => {
   return (
-    <div>Home component</div>
+    <MoviesHomeView/>
   )
 }
 

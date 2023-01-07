@@ -1,9 +1,16 @@
-import React from 'react'
+import MoviesByFilterHome from "./components/MoviesByFilterHome";
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
-}
-
-export default index
+export const MoviesHomeView = () => {
+	return (
+		<>
+    <p>popular</p>
+			<MoviesByFilterHome filter={"popular"} />
+      <br />
+      <p>newest</p>
+			<MoviesByFilterHome filter={"now_playing"} />
+      <br />
+      <p>top rated</p>
+			<MoviesByFilterHome filter={"top_rated"} />
+		</>
+	);
+};
