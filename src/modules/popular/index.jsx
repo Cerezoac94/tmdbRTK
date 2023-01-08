@@ -2,13 +2,14 @@
 // Posteriormente este componente sera llamado en la page popular o a la que pertenezca
 
 
+import AsideList from "../../components/aside/asideList"
 import PopularList from "./components/PopularList"
 
 export const PopularView = () => {
   return (
     <>
     <PopularList/>
-    <div>AsideList</div>
+    <AsideList/>
     </>
   )
 }
