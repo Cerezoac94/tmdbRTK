@@ -15,16 +15,12 @@ const PopularList = () => {
     page: "1",
   });
   const { data: genre = [] } = useGetGenresQuery();
-  // console.log(result.results);
-  // console.log(genre.genres);
-
-  let genresMovie;
 
   return isLoading ? (
     <h3>Cargando...</h3>
   ) : (
     result.results.filter(ifPoster).map((movie) => (
-      //obtener generos let genresMovie = (genres.results.map(genre => genre.id.exist(movie.genre )))
+      //obtener generos let genresMovie = (genres.genres.map(genre => genre.id.exist(movie.genre )))
 
       <Movies movie={movie} key={movie.id} />
     ))
