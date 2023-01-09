@@ -1,12 +1,13 @@
-import NewestList from "./components/NewestList"
+import AsideList from "../../components/aside/asideList";
+import NewestList from "./components/NewestList";
 
 export const NewestView = () => {
   return (
     <>
-    <NewestList/>
-    <div>AsideList</div>
+      <NewestList />
+      <AsideList />
     </>
-  )
-}
+  );
+};
 
 // export default index

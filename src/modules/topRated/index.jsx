@@ -1,11 +1,12 @@
-import TopRatedList from './components/TopRatedList'
+import AsideList from "../../components/aside/asideList";
+import TopRatedList from "./components/TopRatedList";
 
 export const TopRatedView = () => {
   return (
     <>
-    <TopRatedList/>
-    <div>AsideTopRated</div>
+      <TopRatedList />
+      <AsideList />
     </>
-  )
-}
+  );
+};
 // export default index
