@@ -9,4 +9,3 @@ export const TopRatedView = () => {
     </>
   );
 };
-// export default index

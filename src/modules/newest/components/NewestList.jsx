@@ -1,6 +1,5 @@
 import { useGetMoviesQuery } from "../../../redux/api/tmdbAPI";
 import { ifPoster } from "../../../utilities/validateContains.utility";
-// import MoviesNewest from './MoviesNewest'
 import Movies from "../../../components/moviesCard/Movies";
 
 const NewestList = () => {
