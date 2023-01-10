@@ -6,13 +6,13 @@ const Nav = () => {
 			<Link to={"/"}>
 				<h3>HomeOption</h3>
 			</Link>
-			<Link to={"/popular"}>
+			<Link to={"movies/popular"}>
 				<h3>PopularOption</h3>
 			</Link>
-			<Link to={"/newest"}>
+			<Link to={"movies/newest"}>
 				<h3>NewestOption</h3>
 			</Link>
-			<Link to={"/top-rated"}>
+			<Link to={"movies/top-rated"}>
 				<h3>Top RatedOption</h3>
 			</Link>
 		</>

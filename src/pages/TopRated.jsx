@@ -1,4 +1,4 @@
-import {TopRatedView} from '../modules/topRated'
+import {TopRatedView} from '../modules/indexPages'
 const TopRated = () => {
   return (
     <TopRatedView/>

@@ -1,5 +1,5 @@
 
-import {PopularView} from '../modules/popular'
+import {PopularView} from '../modules/indexPages'
 
 const Popular = () => {
   return (

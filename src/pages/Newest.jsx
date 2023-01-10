@@ -1,5 +1,4 @@
-import React from 'react'
-import {NewestView} from "../modules/newest"
+import {NewestView} from "../modules/indexPages"
 
 const Newest = () => {
   return (

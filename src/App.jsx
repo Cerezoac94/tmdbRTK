@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Popular from "./pages/Popular";
 import Newest from "./pages/Newest";
 import TopRated from "./pages/TopRated";
+import MovieDetail from "./pages/MovieDetail";
 
 
 function App() {
@@ -12,9 +13,11 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<Home/>} />
-				<Route path="/popular" element={<Popular/>} />
-				<Route path="/newest" element={<Newest/>} />
-				<Route path="/top-rated" element={<TopRated/>} />
+				<Route path="/movies/popular" element={<Popular/>} />
+				<Route path="/movies/newest" element={<Newest/>} />
+				<Route path="/movies/top-rated" element={<TopRated/>} />
+				<Route path="movie/:movie_id" element={<MovieDetail/>} />
+
 			</Routes>
 		</>
 	);
