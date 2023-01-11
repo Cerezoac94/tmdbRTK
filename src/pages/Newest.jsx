@@ -1,4 +1,5 @@
-import {NewestView} from "../modules/indexPages"
+import { NewestView } from "../modules/moviesPages"
+
 
 const Newest = () => {
   return (

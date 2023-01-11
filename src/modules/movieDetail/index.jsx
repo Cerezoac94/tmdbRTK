@@ -6,7 +6,6 @@ export const DetailView = () => {
   return (
     <>
       <MovieDetail movie_id={movieId}/>
-      <AsideList />
     </>
   );
 };

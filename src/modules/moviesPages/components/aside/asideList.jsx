@@ -1,7 +1,7 @@
-import { useGetLatestMoviesQuery } from "../../redux/api/tmdbAPI";
 import MoviesAside from "./MoviesAside";
-import { dates } from "../../utilities/formatDateYYYYMMDD.utility";
-import { ifPoster } from "../../utilities/validateContains.utility";
+import { useGetLatestMoviesQuery } from "../../../../redux/api/tmdbAPI";
+import { dates } from "../../../../utilities/formatDateYYYYMMDD.utility";
+import { ifPoster } from "../../../../utilities/validateContains.utility";
 
 const AsideList = () => {
   const date = dates();
