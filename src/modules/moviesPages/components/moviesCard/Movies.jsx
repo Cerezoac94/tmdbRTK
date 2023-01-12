@@ -8,7 +8,7 @@ const Movies = ({ movie }) => {
 		<h1>Cargando...</h1>
 	) : (
 		<article>
-			<Link to={`movie/${movie.id}`}>
+			<Link to={`/movie/${movie.id}`}>
 			<section>
 			<h1>{movie?.title}</h1>
       <img

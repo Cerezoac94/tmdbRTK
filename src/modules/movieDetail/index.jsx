@@ -1,11 +1,13 @@
-import MovieDetail from "./components/MovieDetail";
-import { useParams } from "react-router-dom";
+import Movie from "./components/Movie";
+import { useGetDetailQuery } from "../../redux/api/tmdbAPI";
 
-export const DetailView = () => {
-  const {movieId} = useParams()
+export const DetailView = ({movie_id}) => {
+  const { data: result=[], isLoading } =useGetDetailQuery(movie_id) 
+console.log(result)
   return (
     <>
-      <MovieDetail movie_id={movieId}/>
+    <h2>ListoM</h2>
+      {/* <Movie/> */}
     </>
   );
 };

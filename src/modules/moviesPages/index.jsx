@@ -1,6 +1,6 @@
 
 import MoviesList from "./components/moviesList/MoviesList";
-import AsideList from "./components/aside/asideList"
+import AsideList from "./components/Aside/AsideList"
 
 
 export const PopularView = () => {
