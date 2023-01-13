@@ -1,21 +1,19 @@
-import { Link } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import {NavStyled, NavLinkStyled} from "../../styledComponets/Nav.styled";
 
 const Nav = () => {
 	return (
-		<>
-			<Link to={"/"}>
-				<h3>HomeOption</h3>
-			</Link>
-			<Link to={"movies/popular"}>
-				<h3>PopularOption</h3>
-			</Link>
-			<Link to={"movies/newest"}>
-				<h3>NewestOption</h3>
-			</Link>
-			<Link to={"movies/top-rated"}>
-				<h3>Top RatedOption</h3>
-			</Link>
-		</>
+		<NavStyled>
+			<NavLinkStyled to={"movies/popular"}>
+				<h3>Popular</h3>
+			</NavLinkStyled>
+			<NavLinkStyled to={"movies/newest"}>
+				<h3>Newest</h3>
+			</NavLinkStyled>
+			<NavLinkStyled to={"movies/top-rated"}>
+				<h3>Top Rated</h3>
+			</NavLinkStyled>
+		</NavStyled>
 	);
 };
 

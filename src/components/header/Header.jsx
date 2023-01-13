@@ -1,11 +1,14 @@
+import { HeaderStyled, LinkStyled } from "../styledComponets/Header.styled"
 import Nav from "./nav/Nav"
 
 const Header = () => {
   return (
-    <header>
-      <h2>LogoTMDB</h2>
+    <HeaderStyled>
+        <LinkStyled to='/'>
+        <h2>LogoTMDB</h2>
+        </LinkStyled>      
       <Nav/>
-    </header>
+    </HeaderStyled>
   )
 }
 export default Header

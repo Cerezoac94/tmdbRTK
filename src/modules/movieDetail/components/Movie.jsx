@@ -1,6 +1,8 @@
-const Movie = () => {
+const Movie = ({movie}) => {
   return (
-    <div>MovieDetail</div>
+    <section>
+      <h1>{movie.title}</h1>
+    </section>
   )
 }
 export default Movie
