@@ -2,20 +2,22 @@ import { useGetMoviesQuery } from "../../../redux/api/tmdbAPI";
 import MoviesHome from "./MoviesHome";
 import { ifImage } from "../../../utilities/validateContains.utility";
 
-const MoviesByFilterHome = ({ filter }) => {
-  // console.log(filter);
+const MoviesByFilterHome = ({ filter, page }) => {
   const { data: result = [], isLoading } = useGetMoviesQuery({
     filter,
-    page: "1",
+    page,
   });
+
   return isLoading ? (
     <h3>Cargando...</h3>
   ) : (
-    // pendiente de hacer uso de validaciones con utilites (img y ordenamientos)
     result.results
       .filter(ifImage)
-      .slice(0, 4)
-      .map((movie) => <MoviesHome movie={movie} key={movie.id} />)
+      .slice(0, 5)
+      .map((movie, key) => {
+        return <MoviesHome movie={movie} key={movie.id} position={key}/>
+      } 
+      )
   );
 };
 export default MoviesByFilterHome;

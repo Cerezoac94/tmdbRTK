@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import { useGetGenresQuery } from "../../../../redux/api/tmdbAPI";
 
 
+
 const Movies = ({ movie }) => {
-	const { data: genre = [], isLoading } = useGetGenresQuery();
+const { data: genre = [], isLoading } = useGetGenresQuery();
 	return isLoading ? (
 		<h1>Cargando...</h1>
 	) : (
